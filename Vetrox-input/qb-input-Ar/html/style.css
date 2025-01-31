@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:wght@300&family=Vazirmatn:wght@200&display=swap');
+
+* {
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+:root {
+  --main-color: #8946e8;   /*   حط لون سيرفرك     */
+  --main-RightOrLeft: right;
+  --main-RightOrLeft2: rtl;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.appendablediv {
+    position: relative;
+    top: 45VH;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+.maincon {
+    display: none;
+    background: #1b1f20e0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40vh;
+    padding-bottom: 40px;
+    min-height: 96.3vh;
+}
+
+.submit {
+    position: relative;
+    bottom: 0;
+    left: 50.5%;
+    color: white;
+    transform: translate(-50%);
+    background-color: var(--main-color);
+    border: none;
+    outline: none;
+    height: 4vh;
+    margin-bottom: 1vh;
+    margin-top: 46vh;
+    width: 33.5vh;
+    border-radius: 5px;
+    font-size: 1.5vh;
+    transition-duration: 0.4s;
+    animation-duration: 0.4s;
+  }
+
+.submit:hover {
+  box-shadow: 0 0 10px var(--main-color);
+}
+
+.newOption {
+    width: 85%;
+    height: 10.5vh;
+    background-color: #32373744;
+    background-color: #32373744;
+    border-radius: 5px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 0.7vh;
+}
+
+.optionDesc {
+    color: rgba(205, 205, 205, 0.8);
+    font-size: 1.6vh;
+    direction: var(--main-RightOrLeft2);
+    text-align: var(--main-RightOrLeft);
+    width: 100%;
+    position: absolute;
+    right: 0; 
+    margin: 0;
+    padding: 12px;
+}
+
+.optionInput {
+    position: absolute;
+    top: 89.5%;
+    transform: translate(0, -100%);
+    outline: none;
+    border: none;
+    background-color: #3f464654;
+    color: white;
+    left: 3%;
+    height: 45px;
+    width: 90.5%;
+    border-radius: 5px;
+    font-size: 16px;
+    direction: var(--main-RightOrLeft2);
+    text-align: var(--main-RightOrLeft);
+    padding-right: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2c2f31;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #64676b;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #818489;
+}
+
+*:focus {
+    outline: none;
+  }
+  
+  ::selection {
+    background-color: transparent;
+  }
+
+  
+.Exit {
+    z-index: 121219279172198721987;
+    display: none;
+    position: absolute;
+    height: 28px;
+    width: 110px;
+    left: 94rem;
+    scale: 0.9;
+    top: 2rem;
+    color: rgb(163, 163, 163);
+    border-radius: 5px;
+    background-color: rgba(255, 254, 254, 0.093);
+    font-size: 0.4;
+  }
+  
+  .ESC {
+    position: absolute;
+    left: 12px;
+    top: 3px;
+    scale: 0.8;
+  }
+  
+  .close {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    text-align: center;
+    left: 52px;
+    top: 3PX;
+    height: 22px;
+    font-size: 0.2;
+    width: 55PX;
+    border-radius: 3px;
+    background-color: rgba(24, 24, 24, 0.496);
+  }
+  
+  .Logo {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    left: 57%;
+    top: 50%; 
+    transform: translate(-50%, -50%);
+  }
+
+  .VetroxInformations {
+    display: none;
+    position: absolute;
+    z-index: 888888;
+    left: 1500px;
+    top: 130px;
+    height: 28.5vh;
+    width: 34.5vh;
+    transition-duration: 0.2s;
+    animation-duration: 0.2s;
+  }
+  
+  .Title {
+    position: absolute;
+    height: 60px;
+    width: 292px;
+    left: 60px;
+    top: 230px;
+    font-size: 1.3rem;
+    color: rgb(231, 231, 231);
+    font-weight: bold; 
+    padding: 10px;
+  }
+  
+  .TextTitle {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+
+  
+.newOption {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  max-height: 250px;
+  overflow-y: hidden;
+} 
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 18px;
+  margin-top: 6px;
+  gap: 10px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.option-button {
+  background-color: #3f46467d;
+  color: #ababab;
+  padding: 10px;
+  width: 350px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+
+.option-button:hover {
+  color: #ffffff;
+  background-color: var(--main-color);
+  box-shadow: 0 0 10px var(--main-color),
+  0 0 10px var(--main-color);
+}
+
+.option-button.selected {
+  color: #ffffff;
+  background-color: var(--main-color);
+  box-shadow: 0 0 10px var(--main-color),
+  0 0 10px var(--main-color);
+}
+
+.newOption {
+  max-height: 200px;
+  overflow-y: auto;
+}
